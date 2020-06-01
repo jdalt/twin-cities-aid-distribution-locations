@@ -167,6 +167,7 @@
             .filter(item => (item.gsx$nameoforganization.$t != '') && (item.gsx$longitude.$t != '') && (item.gsx$latitude.$t != '')) // only items with names and lon,lat
             .sortBy(item => item.gsx$nameoforganization.$t )
             .map(item => {
+              console.log(item.gsx$color)
               const rawLocation = {
                 name: item.gsx$nameoforganization.$t,
                 neighborhood: item.gsx$neighborhood.$t,
@@ -196,7 +197,7 @@
               const accessibleColorTransform = { // this way you don't have to change everything in the google spreadsheet
                 "#fc03df": "#2c7bb6",
                 "#03bafc": "#abd9e9",
-                "#9f48ea": "#fdae61",
+                "#9F48EA": "#fdae61",
                 "#c70000": "#d7191c",
                 "#aaaaaa": "#ffffbf"
               }
