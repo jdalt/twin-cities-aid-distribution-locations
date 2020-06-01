@@ -167,7 +167,6 @@
             .filter(item => (item.gsx$nameoforganization.$t != '') && (item.gsx$longitude.$t != '') && (item.gsx$latitude.$t != '')) // only items with names and lon,lat
             .sortBy(item => item.gsx$nameoforganization.$t )
             .map(item => {
-              console.log(item.gsx$color)
               const rawLocation = {
                 name: item.gsx$nameoforganization.$t,
                 neighborhood: item.gsx$neighborhood.$t,
