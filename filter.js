@@ -1,3 +1,6 @@
+/**
+ * Filter adds a filter control to the side panel location list
+ */
 class Filter {
   $filters = []
   
@@ -50,31 +53,5 @@ class Filter {
     this.$filters = Array.prototype.slice.call(this.$controls.querySelectorAll('input.filter'))
     this.$sort.addEventListener('change', this.update.bind(this))
     this.$filters.forEach($e => $e.addEventListener('change', this.update.bind(this)))
-
-    // // sorting
-    // const $sortLabel = document.createElement('label')
-    // $sortLabel.for = 'sort-by'
-    // $sortLabel.innerHTML = 'Sort by: '
-    // this.$sort = document.createElement('select')
-    // this.$sort.name = 'sort-by'
-    // this.$sort.id = 'sort-by'
-  
-    // Object.keys(this.sortOptions).forEach(k => {
-    //   const $el = document.createElement('option')
-    //   $el.value = k
-    //   $el.innerHTML = this.sortOptions[k].label
-    //   $el.selected = !!this.sortOptions[k].selected
-    //   this.$sort.append($el)
-    // })
-    
-    // this.$sort.addEventListener('change', this.update.bind(this))
-    
-    // this.$controls.append($sortLabel)
-    // this.$controls.append(this.$sort)
-
-    // // filtering
-    // this.statusOptions.forEach(s => {
-    // })
-    
   }
 }
