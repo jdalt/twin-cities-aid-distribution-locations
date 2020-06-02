@@ -32,7 +32,7 @@ class Filter {
 
 
     const filters = this.statusOptions.map(s => {
-      return `<li><input class="filter" type="checkbox" name="filter-${s.name}" value="${s.name}" checked><label for="filter-${s.name}">${s.label}</label></li>`
+      return `<li><input class="filter" type="checkbox" id="filter-${s.name}" value="${s.name}" checked><label for="filter-${s.name}">${s.label}</label></li>`
     }).join('')
 
     this.$controls.innerHTML = `

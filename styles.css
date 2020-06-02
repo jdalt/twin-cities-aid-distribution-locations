@@ -71,6 +71,17 @@ body { margin: 0; padding: 0; }
 .container h3 {
   color: #777;
 }
+
+
+ul.filters {
+  list-style: none;
+  padding: 0;
+  
+}
+
+ul.filters li {
+  padding: .25em 0;
+}
 @media only screen and (max-width: 720px) {
   #legend.map-overlay {
     margin: 0;
