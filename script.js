@@ -171,7 +171,12 @@ const onMapLoad = async () => {
         mostRecentlyUpdatedAt: item.gsx$mostrecentlyupdated.$t
       }
       const location = _.pickBy(rawLocation, val => val != '')
-      const status = getStatus(item.gsx$color.$t) || {}
+      const status = getStatus(item.gsx$color.$t)
+
+      if (!status) {
+        console.error("Malformed data for "+location.name+", could not find status: "+item.gsx$color.$t)
+        return
+      }
 
       // transform location properties into HTML
       const propertyTransforms = {
