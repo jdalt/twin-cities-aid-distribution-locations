@@ -196,23 +196,23 @@ const onMapLoad = async () => {
       sortOptions: [
         {
           name: 'urgentNeed',
-          label: 'Urgency',
+          label: 'Urgent requests first',
           sort: { order: 'desc' }
         },
         {
           name: 'name',
-          label: 'Name',
+          label: 'Alphabetical (Name)',
           sort: { order: 'asc' },
           selected: true
         },
         {
           name: 'status',
-          label: 'Status',
+          label: 'Location status',
           sort: { order: 'desc' }
         },
         {
           name: 'neighborhood',
-          label: 'Neighborhood',
+          label: 'Alphabetical (Neighborhood)',
           sort: { order: 'asc' }
         }
       ],
