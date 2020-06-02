@@ -12,10 +12,14 @@ body { margin: 0; padding: 0; }
   border-radius: 3px;
 }
 #left-hamburger {
-  top: 2px;
-  left: 2px;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
+  padding: 15px;
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
 }
 #legend {
   padding: 10px;
@@ -76,7 +80,7 @@ body { margin: 0; padding: 0; }
 ul.filters {
   list-style: none;
   padding: 0;
-  
+
 }
 
 ul.filters li {
