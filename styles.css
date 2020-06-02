@@ -14,9 +14,9 @@ body { margin: 0; padding: 0; }
 #left-hamburger {
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
-  padding: 15px;
+  width: 15px;
+  height: 15px;
+  padding: 18px;
   margin: 10px;
   background-color: #ffffff;
   border-radius: 4px;
